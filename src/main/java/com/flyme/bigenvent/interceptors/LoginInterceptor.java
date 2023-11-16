@@ -32,5 +32,7 @@ public class LoginInterceptor implements HandlerInterceptor {
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
 //        清空ThreadLocal
         ThreadLocalUtil.remove();
+
     }
 }
+//this：隐式参数，表示当前对象
